@@ -1,0 +1,12 @@
+{
+    "storename": "reality",
+    "crawdadfile": "reality.txt",
+    "idmap": "idmap.txt",
+    "tau": 1,
+    "eta": 1,
+    "tracename": "cjeg",
+    "wr_flag": 1,
+    "debug": 0,
+    "loglevel": 2000,
+    "monitormemory":0
+}

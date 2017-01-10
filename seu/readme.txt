@@ -1,0 +1,1 @@
+Seu_all: about 1000 smart mobile devices (smart phone or pad) with WIFI opportunistically encounter in the campus of Southeast University (our campus) during a week. 

@@ -1,0 +1,6 @@
+1 1 2 UP
+3 1 2 DOWN
+3 1 3 UP
+4 2 3 UP
+5 1 3 DOWN
+6 2 3 DOWN

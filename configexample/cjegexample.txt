@@ -1,0 +1,12 @@
+{
+    "storename": "test",
+    "crawdadfile": "example.txt",
+    "idmap": "idmap.txt",
+    "tau": 1,
+    "eta": 1,
+    "tracename": "cjeg",
+    "wr_flag": 0,
+    "debug": 0,
+    "loglevel": 2000,
+    "monitormemory":0
+}
