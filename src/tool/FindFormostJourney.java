@@ -26,10 +26,10 @@ import java.io.FileNotFoundException;
 public class FindFormostJourney {
 
 	// parameter set
-	long starttime = 1920;
-	int source = 32;
-	int destination = 46;
-	int nodes_number = 62;
+	static long starttime = 1920;
+	static int source = 14;
+	static int destination = 29;
+	int nodes_number = 100;
 	
 	
 	long tead[] = new long[nodes_number + 1];
@@ -46,7 +46,9 @@ public class FindFormostJourney {
 		FindFormostJourney findformostj = new FindFormostJourney();
 		findformostj.constructAdjacentList();
 		// findformostj.printAdjacentList();
-		findformostj.findFormostJ();
+		//for (starttime=0;starttime<1209493;starttime++)
+		//	for (source=1;source<100;source++)
+				findformostj.findFormostJ();
 		findformostj.printFormostJ();
 	}
 
@@ -184,6 +186,8 @@ public class FindFormostJourney {
 		}
 
 		tead[source] = starttime;
+		
+		System.out.println("starttime is:"+starttime);
 
 		Comparator<Integer> qicmp;
 		qicmp = new Comparator<Integer>() {
@@ -206,6 +210,7 @@ public class FindFormostJourney {
 			if (u == destination)
 				break;
 			AdjacentListMap adjacentlistmap = adjacentlists_map.get(u);
+			if (adjacentlistmap==null) break;
 			Iterator<Entry<Integer, EdgeScheduleList>> neighborsite = adjacentlistmap
 					.entrySet().iterator();
 			while (neighborsite.hasNext()) {

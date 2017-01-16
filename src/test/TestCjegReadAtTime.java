@@ -23,9 +23,9 @@ public class TestCjegReadAtTime {
 	 */
 	public static void main(String[] args) throws IOException {
 		// parameter set
-		long starttime = 32*60;
-		int source=1;
-		int destination=32;
+		long starttime = 1920;
+		int source=14;
+		int destination=29;
 		
 		
 		Edge e = new Edge(source, destination);
@@ -39,10 +39,10 @@ public class TestCjegReadAtTime {
 		if (crjc == null) {
 			Log.writeln("there's no journey at time:" + starttime, 2);
 		} else {
-			Log.write("stime:" + crjc.getStime(), 1000);
-			Log.write(" etime:" + crjc.getEtime(), 1000);
+			Log.write("stime:" + crjc.getStime(), 2000);
+			Log.write(" etime:" + crjc.getEtime(), 2000);
 			Log.writeln(" journey is:"
-					+ crjc.getRepresentative_crjourney().toDbString(), 1000);
+					+ crjc.getRepresentative_crjourney().toDbString(), 2000);
 		}
 		cjegtrace.reader_close();
 	}
